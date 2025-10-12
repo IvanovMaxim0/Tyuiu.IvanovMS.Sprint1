@@ -5,7 +5,7 @@ namespace Tyuiu.IvanovMS.Sprint1.Task4.V15.Lib
     {
         public double Calculate(double x, double y)
         {
-            return Math.Round(((x + (Math.Pow(y,2)))) / (Math.Pow(Math.E,2) - 4 * y), 3);
+            return Math.Round((x + Math.Pow(y, 2)) / Math.Pow(Math.E, (2 - 4 * y)), 3);
         }
     }
 }
