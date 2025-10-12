@@ -1,4 +1,4 @@
-﻿using Tyuiu.IvanovMS.Sprint1.Task1.V15.Lib;
+﻿using Tyuiu.IvanovMS.Sprint1.Task2.V1.Lib;
 class Program
 {
     static void Main(string[] args)
@@ -8,29 +8,29 @@ class Program
         Console.Title = "Спринт #1 | Выполнил: Иванов М. С. | ПКТб-25-1";
         Console.WriteLine("***************************************************************************");
         Console.WriteLine("* Спринт #1                                                               *");
-        Console.WriteLine("* Тема: Организация ввода вывода в консольных приложениях                 *");
-        Console.WriteLine("* задание #1                                                              *");
-        Console.WriteLine("* Вариант #15                                                             *");
+        Console.WriteLine("* Тема: Арифметические операторы в C#                                     *");
+        Console.WriteLine("* задание #2                                                              *");
+        Console.WriteLine("* Вариант #1                                                              *");
         Console.WriteLine("* Выполнил: Иванов Максим Сергеевич | ПКТб-25-1                           *");
         Console.WriteLine("***************************************************************************");
         Console.WriteLine("* УСЛОВИЕ:                                                                *");
         Console.WriteLine("* Написать программу, которая запрашивает у пользователя исходные данные, *");
-        Console.WriteLine("* вычисляет результат по формуле (4+2*x)/7 и печатает его на экране.      *");
-        Console.WriteLine("*                                                                         *");
+        Console.WriteLine("* выполняет указанные расчёты и печатает результат на экране.             *");
+        Console.WriteLine("* Известно расстояние в километрах. Вычислить расстояние в милях.         *");
         Console.WriteLine("***************************************************************************");
         Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
         Console.WriteLine("***************************************************************************");
 
-        double x;
+        int x;
 
         Console.WriteLine("Введите значение X:");
-        x = Convert.ToDouble(Console.ReadLine());
+        x = Convert.ToInt32(Console.ReadLine());
 
         Console.WriteLine("***************************************************************************");
         Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
         Console.WriteLine("***************************************************************************");
 
-        Console.WriteLine(ds.Calculate(x));
+        Console.WriteLine("Расстояние в милях X = " + ds.ConvertKmToM(x));
 
         Console.ReadLine();
     }
