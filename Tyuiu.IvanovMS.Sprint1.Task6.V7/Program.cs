@@ -1,5 +1,5 @@
 ﻿using Tyuiu.IvanovMS.Sprint1.Task6.V7.Lib;
-class programm
+class Program
 {
     private static void Main(string[] args)
     {
